@@ -1,0 +1,24 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc-watch --onSuccess \"node ./lib/index.js\"",
+    "dev": "ts-node-dev --respawn src/server.ts"
+  },
+  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.13",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "ts-node-dev": "^2.0.0",
+    "tsc-watch": "^7.2.1",
+    "typescript": "^7.0.2"
+  }
+}
